@@ -13,20 +13,6 @@
 .REQUIREMENTS
   Requires -RunAsAdministrator  
   WSUS Administrator Console must be Installed or UpdateServices Module available
-.NOTES
-  Version:        1.1
-  Author(s):         Travis Coles, DeAndre Childs, Jeremy La Camera
-  Creation Date:  05/19/2020
-  To do:
-      
-    - Email the admins for machines to which any newly-approved updates apply. FYI only
-    - Email the admins again at 7 days, advise them to schedule installation within next 21 days.
-    - Email admin at 14 days for machines to which those updates apply. Warn them to schedule installation within next 14 days.
-    - Create ticket for admin at 21 days.
-    - Log any approved and declined updates (append to existing file for 1 year, then rotate to new file)
-.CHANGELOG:
-  10/31/2019 - Created Script - Jeremy La Camera
-  08/12/2020 - Updated script to include an email to Infrastructure when admins are notified
 #>
 param (
 
