@@ -10,8 +10,8 @@
   None
 .OUTPUTS
   String path to the resulting HTML report file
-.REQUIREMENTS
-  Requires -RunAsAdministrator  
+.Notes
+  Must be Run As Administrator
   WSUS Administrator Console must be Installed or UpdateServices Module available
 #>
 param (
