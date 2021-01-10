@@ -8,8 +8,8 @@
   as well as the deadlines tied to those specific updates to meet COH policy requirements.
 .INPUTS
   None
-.OUTPUTS Log File
-  None
+.OUTPUTS
+  String path to the resulting HTML report file
 .REQUIREMENTS
   Requires -RunAsAdministrator  
   WSUS Administrator Console must be Installed or UpdateServices Module available
