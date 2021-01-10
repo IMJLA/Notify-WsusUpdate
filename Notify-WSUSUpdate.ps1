@@ -49,7 +49,8 @@ param (
 
 )
 
-# $PSScriptRoot is usually null inside the param block so I can't use the double-quotes up there to expand it, but doing it this way allows comment-based help to accurately reflect the default values of these parameters
+# $PSScriptRoot is usually null inside the param block so I can't use the double-quotes up there to expand it
+# Doing it this way allows comment-based help to accurately reflect the default values of these parameters
 if ($LogDir -eq '$PSScriptRoot') {
     $LogDir = "$PSScriptRoot\Logs\$(Get-Date -Format 'yyyy')\$(Get-Date -Format 'MM')\$((Get-Date -Format s) -replace ':','-')"
 }
